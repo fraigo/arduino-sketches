@@ -25,14 +25,21 @@
 #define trigPin 13
 #define echoPin 12
 
+#define redLed 11
+#define greenLed 9
+
 void setup() {
   Serial.begin (9600);
+  
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
+  
+  pinMode(redLed, OUTPUT);
+  pinMode(greenLed, OUTPUT);
 }
 
 void loop() {
-  long duration, distance;
+  long duration, distance, prev;
   
   digitalWrite(trigPin, LOW);  
   delayMicroseconds(2); 
@@ -43,11 +50,27 @@ void loop() {
   duration = pulseIn(echoPin, HIGH);
   distance = (duration/2) / 29.1;
   
-  if (distance<1000){
+  if (distance<1000 ){
     Serial.println(distance);
   }
 
-  delay(200);
+  
+  
+  if (distance<15 ){
+    analogWrite(redLed,255 - (distance*15));
+    analogWrite(greenLed,0);
+  }
+  else if (distance<80 ){
+    analogWrite(greenLed,255-(distance*3));
+    analogWrite(redLed,0);
+  }else {
+    analogWrite(redLed,0);
+    analogWrite(greenLed,0);
+  }
+
+  prev = distance;
+
+  delay(50);
   
 }
 
