@@ -14,6 +14,9 @@
  *            TRIG connected to PIN 13 (trigPin)
  *            ECHO connected to PIN 12 (echoPin)
  *            GND  connected to GND (-)
+ *            
+ *            Green Led connected (+) to PIN 9 through 330K resistor
+ *            Red Led connected (+) to PIN 11 through 330K resistor
  * 
  * Results
  * -------
