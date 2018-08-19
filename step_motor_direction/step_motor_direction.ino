@@ -1,26 +1,29 @@
-/*
- * Author: SMRAZA KEEN
- * Date:2016/6/29
- * IDE V1.6.9
- * Email:TechnicSmraza@outlook.com
- * Function:
+/**
+ * Step motor - direction control
+ * Author: Francisco Igor
+ * Email : franciscoigor@gmail.com
+ * 
+ * 
  */
 #include <Stepper.h>
+
 const int stepsPerRevolution = 200;  // change this to fit the number of steps per revolution
-// for your motor
+
 // initialize the stepper library on pins 2 through 5:
 Stepper myStepper(stepsPerRevolution, 2, 4, 3, 5);
-int stepCount = 0;  // number of steps the motor has taken
+
+
 void setup() {
   // nothing to do inside the setup
 }
 void loop() {
-  // read the sensor value:
+  // read the potentiometer value:
   int sensorReading = analogRead(A0);
   
-  // map it to a range from 0 to 100:
+  // Map it to a range from -2 to 2
   int direction = map(sensorReading, 0, 1023, -2, 2);
-  // set the motor speed:
+  
+  // set the motor speed and step direction
   myStepper.setSpeed(50);
   myStepper.step(direction);
 
