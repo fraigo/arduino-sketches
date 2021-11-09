@@ -41,11 +41,11 @@ int notes[]= {
 
 int song[] = {
   // mary had a little lamb
-  // MI, RE, DO, RE, MI, MI, MI, 0, RE, RE, RE, 0, MI, SOL, SOL, 0, MI, RE, DO, RE, MI, MI, MI, MI, RE, RE, MI, RE, DO, DO, DO, 0
+  MI, RE, DO, RE, MI, MI, MI, 0, RE, RE, RE, 0, MI, SOL, SOL, 0, MI, RE, DO, RE, MI, MI, MI, MI, RE, RE, MI, RE, DO, DO, DO, 0,
   // happy birthday
-  // DO, DO, RE, DO, FA, MI, 0 , DO, DO, RE, DO, SOL, FA, 0, DO, DO, DO*2, LA, FA, FA, MI, RE, 0, SIb, SIb, LA, FA, SOL, FA, 0
+  DO, DO, RE, DO, FA, MI, 0 , DO, DO, RE, DO, SOL, FA, 0, DO, DO, DO*2, LA, FA, FA, MI, RE, 0, SIb, SIb, LA, FA, SOL, FA, 0,
   // twinkle twinkle
-  DO, DO, RE, RE, MI, MI, DO, DO, DO, DO, RE, RE, MI, MI, DO, DO, MI, MI, FA, FA, SOL, SOL, SOL, SOL, MI, MI, FA, FA, SOL, SOL, SOL, SOL, SOL, LA, SOL, FA, MI, MI, DO, DO, SOL, LA, SOL, FA, MI, MI, DO, DO, RE, RE, SOL/2, SOL/2, DO, DO, DO, DO, RE, RE, SOL/2, SOL/2, DO, DO, DO, DO, 0
+  DO, DO, RE, RE, MI, MI, DO, DO, DO, DO, RE, RE, MI, MI, DO, DO, MI, MI, FA, FA, SOL, SOL, SOL, SOL, MI, MI, FA, FA, SOL, SOL, SOL, SOL, SOL, LA, SOL, FA, MI, MI, DO, DO, SOL, LA, SOL, FA, MI, MI, DO, DO, RE, RE, SOL/2, SOL/2, DO, DO, DO, DO, RE, RE, SOL/2, SOL/2, DO, DO, DO, DO, 0,
 };
 
 int pos;
